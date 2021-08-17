@@ -8,14 +8,14 @@ Tool to quickly get stats from console output of Excavator from NiceHash
  - Print out in console averages
  - Example of print out
 
-> Select log file
-> C:/Users/kchen/Desktop/excavttor log.txt 
-> C:/Users/kchen/Desktop/excavttor log_clean.log has been created.  
-> Avg Speed:  108.48  MH/s
-> Avg Power:  275.12  W 
-> Avg> Efficiency: 394.35 kH/J 
-> Avg Ping:  137 ms 
-> Total Rejected:  1
+> Select log file    
+> C:/Users/kchen/Desktop/excavttor log.txt    
+> C:/Users/kchen/Desktop/excavttor log_clean.log has been created    
+> Avg Speed:  108.48  MH/s    
+> Avg Power:  275.12  W    
+> Avg> Efficiency: 394.35 kH/J    
+> Avg Ping:  137 ms    
+> Total Rejected:  1    
 
 **How to run**
 
