@@ -26,5 +26,5 @@ Tool to quickly get stats from console output of Excavator from NiceHash
  5. Profit
 
 **Requirements:**
-Excavator 1.16.11f
-Python 3.9
+ - Excavator 1.16.11f
+ - Python 3.9
