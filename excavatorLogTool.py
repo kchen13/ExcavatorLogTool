@@ -23,6 +23,7 @@ powerTally = 0
 efficiencyTally = 0
 rejectedTally = 0
 acceptedTally = 0
+pingTally = 0
 
 with open(filename, 'r') as log:
     for line in log:
@@ -44,6 +45,7 @@ with open(filename, 'r') as log:
             # Accepted Ping in ms
             x = line.find("accepted (")
             acceptedTally += float(line[x + 10:-4])
+            pingTally += 1
         if rejectedString in line:
             add = True
             rejectedTally += 1
@@ -54,5 +56,5 @@ with open(filename, 'r') as log:
     print('Avg Speed: ', round(speedTally / statCounts, 2), ' MH/s')
     print('Avg Power: ', round(powerTally / statCounts, 2), ' W')
     print('Avg Efficiency:', round(efficiencyTally / statCounts, 2), 'kH/J')
-    print('Avg Ping: ', round(acceptedTally / statCounts), 'ms')
+    print('Avg Ping: ', round(acceptedTally / pingTally), 'ms')
     print('Total Rejected: ', rejectedTally)
